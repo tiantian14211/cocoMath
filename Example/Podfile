@@ -1,0 +1,16 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'cocopodStaticLinrary_Example' do
+  pod 'cocopodStaticLinrary', :path => '../'
+
+  target 'cocopodStaticLinrary_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+    pod 'FBSnapshotTestCase'
+    pod 'Expecta+Snapshots'
+  end
+end
