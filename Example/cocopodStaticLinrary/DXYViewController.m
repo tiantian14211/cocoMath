@@ -7,6 +7,7 @@
 //
 
 #import "DXYViewController.h"
+#import<cocopodStaticLinrary/cocoMath.h>
 
 @interface DXYViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSInteger q = [cocoMath coth_add:1 to:2];
+    NSLog(@"%d",q);
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
